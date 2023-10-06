@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js-89-sidlicki/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite ingredients</title>
+    
+    <script type="module" crossorigin src="/js-89-sidlicki/assets/main-start-ce8904ef.js"></script>
+    <link rel="stylesheet" href="/js-89-sidlicki/assets/main-start-a2ea6ab6.css">
+  </head>
+
+  <body>
+    <header class="header" id="home">
+  <!-- розмір контейнера вже заданий в /container.css для всіх пристроїв -->
+  <div class="container header-container">
+    <div class="header-desktop">
+      <a href="./index.html" class="header-home-link">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Favorite
+          <svg class="header-arrow-icon">
+            <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a class="dropdown-favorite-cocktails-link" href="./favorite-coctails.html">Favorite cocktails</a>
+          <a class="dropdown-favorite-ingredients-link" href="./favorite-ingredients.html">Favorite ingredients</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-left-elements">
+      <a href="./index.html" class="header-logo-link">DRINKIFY<svg class="header-logo-icon">
+          <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-cocktail"></use>
+        </svg></a>
+    </div>
+    <div class="header-right-elements">
+      <button type="button" class="mobile-menu-open-btn js-open-mobile-menu" aria-label="mobile menu open">
+        <svg class="burger-icon">
+          <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="bg-switcher">
+      <label id="switch" class="switch">
+        <input type="checkbox" id="slider" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <!-- Мобільне меню -->
+  <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu-container">
+      <div class="mobile-menu-top">
+        <div class="mobile-menu-elements">
+          <a href="./index.html" class="mobile-menu-logo-link">DRINKIFY<svg class="mobile-menu-logo-icon">
+              <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-cocktail"></use>
+            </svg></a>
+        </div>
+        <div class="mobile-buttons">
+          <label class="mobile-switch">
+            <input type="checkbox" id="mobile-slider" />
+            <span class="mobile-slider mobile-round"></span>
+          </label>
+          <button class="mobile-menu-close-btn js-close-mobile-menu">
+            <svg class="mobile-menu-close-icon">
+              <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="./index.html" class="mobile-menu-home-link">Home</a>
+        <div class="mobile-dropdown">
+          <button class="mobile-dropbtn">
+            Favorite
+            <svg class="mobile-menu-arrow-icon">
+              <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-content">
+            <a href="./favorite-coctails.html">Favorite cocktails</a>
+            <a class="mobile-dropdown-favorite-ingredients-link" href="./favorite-ingredients.html">Favorite
+              ingredients</a>
+          </div>
+        </div>
+        <img src="/js-89-sidlicki/assets/star-564abfe2.webp" alt="Star" class="tablet-menu-img">
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="section fav-ingredients-section">
+  <div class="container">
+    <h1 class="fav-ingredients-section-header">Favorite ingredients</h1>
+    <div class="fav-ingredients-container">
+      <div class="fav-ingredients-loader-container">
+        <span class="loader"></span>
+        <ul class="fav-ingredients-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!---->
+<div class="modal2 modal-ingredient-window " data-modal="1">
+    <button type="button" class="modal-btn-close js-modal-close" data-modal-close>
+        <svg class="modal-btn-close-icon">
+          <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-close"></use>
+        </svg>
+      </button>
+    
+      <div class="modal-ingredient-content">
+       
+     </div>
+  </div>
+<div class="overlay js-overlay-modal"></div>
+      <section class="pagination">
+    <!-- розмір контейнера вже заданий в /container.css для всіх пристроїв -->
+    <div class="container">
+
+        <div id="tui-pagination-container" class="tui-pagination"><div class="aditional-btn"></div></div>
+    
+    </div>
+
+
+    
+    
+</section>
+
+
+
+
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container footer-container">
+        <div class="logo-footer-wrapper">
+            <a href="./index.html" class="logo-in-footer">
+                <p class="text-logo-footer">DRINKIFY</p>
+                <svg class="icon-coctail-footer">
+                    <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-cocktail"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="social-footer-wrapper">
+            <p class="caption-footer-social">
+                WE IN SOCIAL
+            </p>
+            <ul class="social-list-footer">
+                <li class="social-item-footer">
+                    <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noreferrer noopener"
+                        class="social-link-footer" aria-label="social facebook">
+                        <svg class="social-icon-footer">
+                            <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item-footer">
+                    <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noreferrer noopener"
+                        class="social-link-footer">
+                        <svg class="social-icon-footer" aria-label="social instagram">
+                            <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item-footer">
+                    <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noreferrer noopener"
+                        class="social-link-footer" aria-label="social youtube">
+                        <svg class="social-icon-footer">
+                            <use href="/js-89-sidlicki/assets/sprite-9b9b1358.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Go to top">Top</button>
+</footer>
+
+    
+    
+    
+  </body>
+</html>
