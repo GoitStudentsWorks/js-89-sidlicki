@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/starteam-proj-js/",
+    "build": "vite build --base=/js-89-sidlicki/",
     "build-local": "vite build",
     "preview": "vite preview"
   },
